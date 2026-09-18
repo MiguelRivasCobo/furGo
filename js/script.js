@@ -35,11 +35,11 @@ function initGalleries() {
     const prevBtn = gallery.querySelector('.gallery-arrow.prev');
     const nextBtn = gallery.querySelector('.gallery-arrow.next');
     const dotsWrapper = gallery.querySelector('.gallery-dots');
-    let current = 0;
+    let current = (Number(gallery.dataset.start) || 1) - 1;
 
     for (let i = 0; i < photosPerVan; i++) {
       const dot = document.createElement('span');
-      if (i === 0) dot.classList.add('active');
+      if (i === current) dot.classList.add('active');
       dot.addEventListener('click', () => showPhoto(i));
       dotsWrapper.appendChild(dot);
     }
