@@ -68,7 +68,7 @@ function initReservarButtons() {
 
 /* Envío del formulario de reserva por WhatsApp */
 function initBookingForm() {
-  const WHATSAPP_NUMBER = '34674695959';
+  const WHATSAPP_NUMBER = '34674695949';
   const form = document.getElementById('bookingForm');
 
   form.addEventListener('submit', event => {
