@@ -27,10 +27,10 @@ function initNav() {
 /* Galería de fotos por furgoneta (6 fotos: nombre-1.jpeg ... nombre-6.jpeg) */
 function initGalleries() {
   const galleries = document.querySelectorAll('.van-gallery');
-  const photosPerVan = 6;
 
   galleries.forEach(gallery => {
     const van = gallery.dataset.gallery;
+    const photosPerVan = Number(gallery.dataset.photos) || 6;
     const img = gallery.querySelector('.van-gallery-main');
     const prevBtn = gallery.querySelector('.gallery-arrow.prev');
     const nextBtn = gallery.querySelector('.gallery-arrow.next');
