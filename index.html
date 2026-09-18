@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FurGO | Alquiler de furgonetas en Granada</title>
+<meta name="description" content="FurGO - Alquiler de furgonetas en Granada. Peugeot Boxer e Iveco Daily disponibles por días. Recogida en el Genil.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://furgo-granada.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="FurGO | Alquiler de furgonetas en Granada">
+<meta property="og:description" content="Alquiler de furgonetas en Granada. Peugeot Boxer e Iveco Daily disponibles por días. Recogida en el Genil.">
+<meta property="og:url" content="https://furgo-granada.com/">
+<meta property="og:image" content="https://furgo-granada.com/images/logo.jpeg">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="images/logo.jpeg">
+<link rel="stylesheet" href="css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CarRental",
+  "name": "FurGO",
+  "url": "https://furgo-granada.com/",
+  "image": "https://furgo-granada.com/images/logo.jpeg",
+  "telephone": "+34674695959",
+  "priceRange": "80€-90€",
+  "areaServed": "Granada",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Parque infantil Laguna de Aguas Verdes, Genil",
+    "addressLocality": "Granada",
+    "postalCode": "18008",
+    "addressCountry": "ES"
+  }
+}
+</script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#inicio" class="logo">
+      <img src="images/logo.jpeg" alt="FurGO logo">
+      <span>FurGO</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#inicio">Inicio</a>
+      <a href="#furgonetas">Furgonetas</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="container hero-inner">
+    <h1>Alquiler de furgonetas en Granada</h1>
+    <p>Mudanzas, transporte de mercancía y entregas con la furgoneta que mejor se adapta a ti. Reserva por días, sin complicaciones.</p>
+    <a href="#furgonetas" class="btn btn-primary">Ver furgonetas</a>
+  </div>
+</section>
+
+<section id="furgonetas" class="vans">
+  <div class="container">
+    <h2>Nuestras furgonetas</h2>
+    <p class="section-subtitle">Todas incluyen 200 km/día y 100 € de fianza.</p>
+
+    <div class="van-grid">
+
+      <article class="van-card" data-van="Peugeot Boxer">
+        <div class="van-gallery" data-gallery="peugeot">
+          <img class="van-gallery-main" src="images/peugeot/peugeot-1.jpeg" alt="Peugeot Boxer">
+          <button class="gallery-arrow prev" aria-label="Foto anterior">&#10094;</button>
+          <button class="gallery-arrow next" aria-label="Foto siguiente">&#10095;</button>
+          <div class="gallery-dots"></div>
+        </div>
+        <div class="van-info">
+          <h3>Peugeot Boxer <span class="van-capacity">10 m³</span></h3>
+          <p class="van-price">80 € <span>/ día</span></p>
+          <p>Furgoneta amplia y versátil, perfecta para mudanzas, transporte de mercancías, entregas y trabajos profesionales.</p>
+          <ul class="van-specs">
+            <li>10 m³ de capacidad de carga</li>
+            <li>100 € de fianza</li>
+            <li>200 km incluidos por día</li>
+          </ul>
+          <a href="#reservar" class="btn btn-primary btn-reservar" data-van="Peugeot Boxer">Reservar Peugeot Boxer</a>
+        </div>
+      </article>
+
+      <article class="van-card" data-van="Iveco Daily">
+        <div class="van-gallery" data-gallery="iveco">
+          <img class="van-gallery-main" src="images/iveco/iveco-1.jpeg" alt="Iveco Daily">
+          <button class="gallery-arrow prev" aria-label="Foto anterior">&#10094;</button>
+          <button class="gallery-arrow next" aria-label="Foto siguiente">&#10095;</button>
+          <div class="gallery-dots"></div>
+        </div>
+        <div class="van-info">
+          <h3>Iveco Daily <span class="van-capacity">12 m³</span></h3>
+          <p class="van-price">90 € <span>/ día</span></p>
+          <p>Furgoneta robusta y espaciosa, ideal para mudanzas, grandes transportes, entregas y trabajos profesionales.</p>
+          <ul class="van-specs">
+            <li>12 m³ de capacidad de carga</li>
+            <li>100 € de fianza</li>
+            <li>200 km incluidos por día</li>
+          </ul>
+          <a href="#reservar" class="btn btn-primary btn-reservar" data-van="Iveco Daily">Reservar Iveco Daily</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="reservar" class="booking">
+  <div class="container">
+    <h2>Reservar furgoneta</h2>
+    <p class="section-subtitle">Rellena el formulario y te confirmamos la disponibilidad por WhatsApp.</p>
+    <form id="bookingForm" class="booking-form">
+      <div class="form-row">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+      </div>
+      <div class="form-row">
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" name="telefono" required>
+      </div>
+      <div class="form-row">
+        <label for="furgoneta">Furgoneta</label>
+        <select id="furgoneta" name="furgoneta">
+          <option value="Peugeot Boxer">Peugeot Boxer – 10 m³ – 80 €/día</option>
+          <option value="Iveco Daily">Iveco Daily – 12 m³ – 90 €/día</option>
+        </select>
+      </div>
+      <div class="form-row two-cols">
+        <div>
+          <label for="fechaInicio">Fecha de recogida</label>
+          <input type="date" id="fechaInicio" name="fechaInicio" required>
+        </div>
+        <div>
+          <label for="fechaFin">Fecha de devolución</label>
+          <input type="date" id="fechaFin" name="fechaFin" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <label for="mensaje">Mensaje (opcional)</label>
+        <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar reserva por WhatsApp</button>
+    </form>
+  </div>
+</section>
+
+<section id="ubicacion" class="location">
+  <div class="container">
+    <h2>Recogida y devolución</h2>
+    <p class="section-subtitle">
+      Parque infantil Laguna de Aguas Verdes, Genil, 18008 Granada
+    </p>
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps?q=Parque+infantil+Laguna+de+Aguas+Verdes,+Genil,+18008+Granada&output=embed"
+        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <a class="btn btn-secondary" target="_blank" rel="noopener"
+       href="https://www.google.com/maps/search/?api=1&query=Parque+infantil+Laguna+de+Aguas+Verdes,+Genil,+18008+Granada">
+      Cómo llegar
+    </a>
+  </div>
+</section>
+
+<section id="opiniones" class="reviews">
+  <div class="container">
+    <h2>¿Qué te ha parecido FurGO?</h2>
+    <p class="section-subtitle">Tu opinión nos ayuda a mejorar. ¡Déjanos una reseña en Google!</p>
+    <a class="btn btn-primary" target="_blank" rel="noopener"
+       href="https://g.page/r/CS5OwOWVjDI6EBE/review">
+      Escribir una reseña
+    </a>
+  </div>
+</section>
+
+<footer id="contacto" class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">
+      <img src="images/logo.jpeg" alt="FurGO logo">
+      <span>FurGO</span>
+    </div>
+    <p>Alquiler de furgonetas en Granada</p>
+    <p>Parque infantil Laguna de Aguas Verdes, Genil, 18008 Granada</p>
+    <p>&copy; <span id="year"></span> FurGO. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

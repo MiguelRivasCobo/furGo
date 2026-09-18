@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://furgo-granada.com/sitemap.xml
